@@ -1,0 +1,231 @@
+body {
+	overflow-x: hidden;
+	background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+	background-size: cover;
+	height: 630px;
+	width: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.header {
+	display: flex;
+}
+.header-logo {
+	float: left;
+	padding: 20px 30px;
+}
+.header-logo:hover {
+	opacity: 0.7;
+}
+.header-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-list li {
+	display: flex;
+	list-style: none;
+	float: left;
+	padding:0px 20px;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Lato',sans-serif;
+	font-weight: bold;
+}
+.header-list li:hover {
+	opacity: 0.7;
+}
+.header-list span {
+	font-size: 10px;
+}
+.btn {
+	display: inline-block;
+	width: 148px;
+  	height: 40px;
+  	line-height: 40px;
+	border-radius: 100vh;
+	background-color: #f79214;
+	text-align: center;
+	font-size: 12px;
+	color: white;
+}
+.btn:hover {
+	opacity: 0.7;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+.main {
+	position: relative;
+	left: 180px;
+}
+.main-text {
+	font-size: 38px;
+}
+.main-text span {
+	padding-left: 110px;
+}
+.main-image {
+	padding-left: 200px;
+}
+
+.main-button {
+	display: inline-block;
+	width: 480px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #f79214;
+	border-radius: 100vh;
+	margin-top: 20px;
+	margin-left: 150px;
+	color: white;
+}
+.main-button:hover {
+	opacity: 0.7;
+}
+.sub-text {
+	font-size: 12px;
+	color: #a2a2a4;
+	line-height: 50%;
+	margin-top: 80px;
+	margin-left: 200px;
+}
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	background-color: #f79214;
+	color: white;
+}
+.bottom-video {
+	padding-top: 50px;
+	padding-left: 200px;
+}
+.bottom-text h2 {
+   	font-size: 38px;
+   	letter-spacing: 2px;
+   	padding-top: 30px;
+   	padding-right: 230px;
+   	font-family: 'Lato',sans-serif;
+}
+.bottom-text p {
+	margin-top: -20px;
+	font-size: 16px;
+	font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+.drawer_hidden {
+  display: none;
+}
+@media (max-width: 767px) {
+
+.drawer_open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+.drawer_open span:before {
+  bottom: 8px;
+}
+.drawer_open span:after {
+  top: 8px;
+}
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.nav ul {
+　width: 100%;
+  justify-content: center; 
+  padding: 0;
+}
+.nav_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display:flex;
+  flex-flow: column;
+  top: 0;
+  left: 100%;
+  z-index: 99;
+  background: black;
+  opacity: 0.8;
+  transition: .5s;
+}
+.nav_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+.nav_list a {
+	color: white;
+}
+.nav_list a span{
+	color: #f79214;
+}
+
+#drawer_input:checked ~ .nav_content {
+  left: 0;
+}
+
+.main {
+ display: block;
+}
+.main-image {
+	margin-right: 0;
+	width: 100%;
+}
+.sub-text {
+	margin-right: 0;
+}
+body {
+	width: 100%;
+	height: 0;
+	padding-top: 42.083%;
+	background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.header-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px 0 15px 15px;
+	width: 157px;
+}
+.header-logo img {
+	width: 100%;
+	height: auto;
+}
+.main-text {
+  display: inline-block;
+  text-align-last: 
+}
+}
